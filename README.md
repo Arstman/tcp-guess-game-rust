@@ -36,9 +36,16 @@ should be work in any OS since telnet are so common.
 
 when the connects successfully, the client  side will  show a welcome information, read it and play the game.
 
-### Attention:
+### 3. How to quit:
 
-Press `Enter` without any other inputs will directly quit the game,  as show in the welcome information; also if you try to press `Ctrl + C`, will do the same.
+**server side**: just normal `Ctrl +C` will close the server.
+
+**client side**:  you can close the client by 2 ways: 
+
+	1.  Press `Enter` without any other inputs will directly quit the game, as  show in welcome message.
+ 	2.   Press `Ctrl + C` and then press `Enter` , will also quit the client.
+
+
 
 ## Screen-shots
 
