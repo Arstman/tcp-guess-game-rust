@@ -42,10 +42,11 @@ Press `Enter` without any other inputs will directly quit the game,  as show in 
 
 ## Screen-shots
 
-### client side
+### client side (by telnet)
 
-![](https://raw.githubusercontent.com/Arstman/imgstorage/main/ch3_client_sid.png)
+![](https://arstman.sharepoint.com/:i:/s/public/EWMClRA4OidOp3Ze33yDyakBGj2s2v4i4ADQzFzgEVvZVA)
 
 ### server side
 
-![](https://raw.githubusercontent.com/Arstman/imgstorage/main/ch3_server_sid.png)
+![](https://arstman.sharepoint.com/:i:/s/public/EZuQj_LTv6lCs5IqXU_cDsgB9nV0OO5qUiBKP9JfAA68QQ)
+
