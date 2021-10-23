@@ -44,11 +44,9 @@ Press `Enter` without any other inputs will directly quit the game,  as show in 
 
 ### client side (by telnet)
 
-![client side screenshot](https://arstman.sharepoint.com/:i:/s/public/EWMClRA4OidOp3Ze33yDyakBGj2s2v4i4ADQzFzgEVvZVA)
-
-
+![client side screenshot](https://raw.githubusercontent.com/Arstman/tcp-guess-game-rust/main/screenshots/ch3_client_sid.png)
 
 ### server side
 
-![server side screenshot](https://arstman.sharepoint.com/:i:/s/public/EZuQj_LTv6lCs5IqXU_cDsgB9nV0OO5qUiBKP9JfAA68QQ)
+![server side screenshot](https://github.com/Arstman/tcp-guess-game-rust/blob/main/screenshots/ch3_server_sid.png)
 
