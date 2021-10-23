@@ -44,13 +44,11 @@ Press `Enter` without any other inputs will directly quit the game,  as show in 
 
 ### client side (by telnet)
 
-if you can load the image, please see the direct address  here:  https://arstman.sharepoint.com/:i:/s/public/EWMClRA4OidOp3Ze33yDyakBGj2s2v4i4ADQzFzgEVvZVA
+![client side screenshot](https://arstman.sharepoint.com/:i:/s/public/EWMClRA4OidOp3Ze33yDyakBGj2s2v4i4ADQzFzgEVvZVA)
 
-![](https://arstman.sharepoint.com/:i:/s/public/EWMClRA4OidOp3Ze33yDyakBGj2s2v4i4ADQzFzgEVvZVA)
+
 
 ### server side
 
-if you can load the image, please see the direct address  here:  https://arstman.sharepoint.com/:i:/s/public/EZuQj_LTv6lCs5IqXU_cDsgB9nV0OO5qUiBKP9JfAA68QQ
-
-![](https://arstman.sharepoint.com/:i:/s/public/EZuQj_LTv6lCs5IqXU_cDsgB9nV0OO5qUiBKP9JfAA68QQ)
+![server side screenshot](https://arstman.sharepoint.com/:i:/s/public/EZuQj_LTv6lCs5IqXU_cDsgB9nV0OO5qUiBKP9JfAA68QQ)
 
