@@ -26,7 +26,7 @@ rust will compiles and when everything goes well, it will start a TCP server, li
 
 ### 2. play with client
 
-you can use `telnet`client  to connect to the server, and player the game, open a new terminal and type:
+you can use `telnet`client  to connect to the server, and play the game, open a new terminal and type:
 
 ```bash
 telnet 127.0.0.1 7878
