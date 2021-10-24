@@ -1,7 +1,7 @@
 # Rust TCP Guess Game
 This is just a small exercise for **lesson 3 of the 7th substrate Course,** the original requirement is very simple and a bit boring, thus I decide to put some fun into it.
 
-Everyone learn rust starts from a guess number game for  [The Rust Book](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html), so i decide to change the origin version into TCP server version, just fit the exercise requirement.
+Everyone learn rust starts from a guess number game from  [The Rust Book](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html), so i decide to change the origin version into TCP server version, just fit the exercise requirement.
 
 
 
@@ -43,7 +43,7 @@ when the connects successfully, the client  side will  show a welcome informatio
 **client side**:  you can close the client by 2 ways: 
 
 	1.  Press `Enter` without any other inputs will directly quit the game, as  show in welcome message.
- 	2.   Press `Ctrl + C` and then press `Enter` , will also quit the client.
+	2.   Press `Ctrl + C` and then press `Enter` , will also quit the client.
 
 
 

@@ -51,7 +51,7 @@ fn handle_connection(mut stream: TcpStream) {
 
     Please input Your Guess: "#;
     //sent the welcome information to client side for print
-    stream.write(welcom.as_bytes()).unwrap();
+    stream.write_all(welcom.as_bytes()).unwrap();
     //the main dealing loop, if player guess the exact number, or press Enter without any input, or
     //some other signal like press "Ctr + C", the loop will break itself out, and close the
     //connection, client side will have to re-connect again to play
@@ -68,7 +68,7 @@ fn handle_connection(mut stream: TcpStream) {
         //chars, or might be signal inputs like "Ctr-C", which should mean to close the connection,
         //however, the Enter press without inputs might be mistake by player, and a bit confusse,
         //so we tell the player in the Welcome information for tips.
-        if input.len() == 0 {
+        if input.is_empty() {
             //log those inputs in server side
             println!("\nGot nothing, close the connection~\n");
             // flush the stream for sake of next incoming
@@ -84,7 +84,7 @@ fn handle_connection(mut stream: TcpStream) {
             Err(_) => {
                 // tell the player that input should be number
                 stream
-                    .write("\nNO! input must be a number! \nPlease input again: ".as_bytes())
+                    .write_all("\nNO! input must be a number! \nPlease input again: ".as_bytes())
                     .unwrap();
                 //flush the write for next incoming's sake
                 stream.flush().unwrap();
@@ -93,7 +93,7 @@ fn handle_connection(mut stream: TcpStream) {
             }
         };
         //print the input guess
-        println!("player guess is : {}", guess);
+        println!("player guessed : {}", guess);
         //now, player input number and we are going to compare to the secret random number we have
         //generated
         match guess.cmp(&secret_number) {
@@ -102,7 +102,7 @@ fn handle_connection(mut stream: TcpStream) {
             Ordering::Less => {
                 // tell player the guess is too small
                 stream
-                    .write("\nToo small! \ntry again: ".as_bytes())
+                    .write_all("\nToo small! \ntry again: ".as_bytes())
                     .unwrap();
                 //let player try again
                 continue;
@@ -110,17 +110,17 @@ fn handle_connection(mut stream: TcpStream) {
             //Ordering::Greater means guess is bigger than secret
             Ordering::Greater => {
                 // the player the guess is too big
-                stream.write("\nToo big! \ntry again: ".as_bytes()).unwrap();
+                stream.write_all("\nToo big! \ntry again: ".as_bytes()).unwrap();
                 // let player try again
                 continue;
             }
             // if Ordering::Equal, means player successful guess the exact number,
             Ordering::Equal => {
                 //log in server
-                println!("player wins this time, close connection and waiting for next player....");
+                println!("player wins this time, close connection and waiting for next player....\n");
                 // Tell player the good news,
                 stream
-                    .write(
+                    .write_all(
                         "\nYou Win The Guess! Well Done, \nnow I have to say Good-bye!! \n\n"
                             .as_bytes(),
                     )
