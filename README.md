@@ -4,6 +4,9 @@ This is just a small exercise for **lesson 3 of the 7th substrate Course,** the 
 Everyone learn rust starts from a guess number game from  [The Rust Book](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html), so i decide to change the origin version into TCP server version, just fit the exercise requirement.
 
 
+Team: #3
+UID: 054
+Name: Aaron彭亚伦
 
 ## How To Play
 
